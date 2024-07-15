@@ -1,0 +1,107 @@
+.main-content-logs {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content-logs > div:first-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content-logs > div:first-child > input {
+  border-radius: 8px;
+  padding: 4px 8px;
+  border: none;
+}
+
+.main-content-logs > div:first-child > input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.logs-container {
+  width: 80%;
+  height: 436px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-content-logs > div > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.register-product-button {
+  background-color: var(--color-success);
+  border: none;
+  border-radius: 8px;
+  color: var(--color-white);
+  padding: 8px 12px;
+}
+
+.delete-all-product-button {
+  background-color: var(--color-danger);
+  border: none;
+  border-radius: 8px;
+  color: var(--color-white);
+  padding: 8px 12px;
+}
+
+.main-content-products > div > div > a {
+  text-decoration: none;
+}
+
+.grid-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-container {
+  width: 100%;
+  max-height: 436px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.table-container > table {
+  width: 100%;
+  margin: 0;
+}
+
+.table-container > table > thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table-container > table > tbody tr {
+  table-layout: fixed;
+}
+
+.actions-table {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.actions-table button {
+  background-color: transparent;
+  border: none;
+  color: var(--color-white);
+}

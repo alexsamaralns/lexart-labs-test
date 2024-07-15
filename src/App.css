@@ -1,0 +1,60 @@
+/* Hide scroll on sidebar */
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0; /* Largura da barra de rolagem */
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Cor do botão de rolagem */
+  border-radius: none; /* Borda arredondada do botão de rolagem */
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent; /* Cor da área de rastreamento da rolagem */
+}
+
+/* Estilizando a barra de rolagem no Firefox */
+/* Firefox não suporta pseudo-classes diretamente, então usamos a propriedade scrollbar-color */
+/* A ordem dos valores é a cor do botão de rolagem e a cor da área de rastreamento da rolagem */
+.hide-scrollbar-mz {
+  scrollbar-color: transparent transparent;
+}
+
+/* Estilizando a barra de rolagem no Internet Explorer 10+ e Edge */
+/* Para Edge, a propriedade -ms-overflow-style é usada para especificar o estilo de rolagem */
+/* .hide-scrollbar-ie {
+  width: 0;
+} */
+
+.hide-scrollbar-ie::-ms-thumb {
+  background-color: transparent;
+  border-radius: none;
+}
+
+.hide-scrollbar-ie::-ms-track {
+  background-color: transparent;
+}
+
+.hide-scrollbar-ie {
+  -ms-overflow-style: none; /* Desativa a barra de rolagem padrão no IE e Edge */
+}
+
+.hide-scrollbar-ie:hover {
+  -ms-overflow-style: scrollbar; /* Ativa a barra de rolagem no hover no IE e Edge */
+}
+
+.sidebar-fixed {
+  padding-bottom: 0!important;
+}
+
+.sidebar-brand, .sidebar-nav-options li,
+.sidebar-brand, .sidebar-nav-options li a,
+.sidebar-brand, .sidebar-nav-options li a svg {
+  color: #fff!important;
+}
+
+.sidebar-nav-options > div > div:not(:first-child) {
+  display: none;
+}
+
+/* End hide scroll on sidebar */

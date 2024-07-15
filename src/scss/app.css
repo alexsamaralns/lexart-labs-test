@@ -1,0 +1,274 @@
+:root {
+  --color-white: #fffef8;
+  --color-primary: #7a6de7;
+  --color-primary-hover: #6158b4;
+	--color-secondary: #9da5b1;
+  --color-secondary-hover: #747a82;
+  --color-tertiary: #FEDB39;
+  --color-success: #2eb85c;
+  --color-success-hover: #238644;
+  --color-danger: #e55353;
+  --color-danger-hover: #b24040;
+  --color-warning: #F89953;
+  --color-warning-hover: #cb7538;
+	--color-error: #E74C3C;
+  --color-info: #3399ff;
+  --color-header-bg-light: #fffef8;
+  --color-fonts-header-light: #8d8d8d;
+  --color-sidebar-bg-light: #fffef8;
+  --color-fonts-sidebar-light: #8d8d8d;
+  --color-content-bg-light: #f3f4f6;
+  --color-fonts-content-light: #364152;
+  --color-sidebar-bg-light: #8894ff;
+  --color-sidebar-icons-light: #fffef8;
+  --color-bg-dark: #4f5d73;
+  --color-bg-dark-medium: #6d81a0;
+  --color-disabled-button: #bfbfbf;
+
+  --color-header-bg-dark: #4f5d73;
+  --color-fonts-header-dark: #dfdfdf;
+  --color-sidebar-bg-dark: #3e495a;
+  --color-fonts-sidebar-dark: #8d8d8d;
+  --color-content-bg-dark: #222032;
+  --color-fonts-content-dark: #fffef8;
+  --color-sidebar-bg-dark: #4f5d73;
+  --color-sidebar-icons-dark: #fffef8;
+  --color-disabled-button: #bfbfbf;
+}
+
+.alert-toast {
+  position: absolute;
+  top: 20px;
+  right: 20px ;
+}
+
+.modal-header > button {
+  display: none;
+}
+
+/* Theme light */
+
+.theme-header-light {
+  background-color: var(--color-header-bg-light);
+  color: var(--color-fonts-header-light)!important;
+}
+
+.theme-content-light {
+  background-color: var(--color-content-bg-light);
+  color: var(--color-fonts-content-light);
+}
+
+.theme-header-font-active {
+  color: var(--color-primary)!important;
+}
+
+.theme-sidebar-light {
+  background-color: var(--color-sidebar-bg-light);
+  color: var(--color-fonts-sidebar-light);
+}
+
+/* End Theme light */
+
+/* Theme dark */
+
+.theme-header-dark {
+  background-color: var(--color-header-bg-dark);
+  color: var(--color-fonts-header-dark)!important;
+}
+
+.theme-content-dark {
+  background-color: var(--color-content-bg-dark);
+  color: var(--color-fonts-content-dark);
+}
+
+.theme-header-font-active {
+  color: var(--color-primary)!important;
+}
+
+.theme-sidebar-dark {
+  background-color: var(--color-sidebar-bg-dark);
+  color: var(--color-fonts-sidebar-dark);
+}
+
+/* End Theme dark */
+
+/* Table style */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+thead th {
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+tbody td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+tbody tr td:first-child {
+  font-weight: bold;
+}
+
+tbody tr td:last-child {
+  font-style: italic;
+}
+
+/* Ent Table style */
+
+/* Pagination style */
+
+.pagination {
+  margin-top: .2rem;
+  margin-bottom: 0px;
+}
+
+.pagination-nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-item-button > button {
+  color: var(--color-white);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 6px 16px;
+}
+
+.page-item-number > button {
+  color: var(--color-white);
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding: 6px 0;
+  width: 30px;
+  outline: none;
+}
+
+.page-item-number-active > button {
+  color: var(--color-white);
+  background-color: transparent;
+  border: none;
+  font-weight: 800;
+  outline: none;
+  font-size: 20px;
+  padding: 2px 6px;
+}
+
+.page-item-button > button:hover,
+.page-item-number > button:hover {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: var(--color-white);
+  outline: none!important;
+}
+
+/* End Pagination style */
+
+/* Scrollbar style */
+
+/* Firefox */
+
+.table-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: var(--color-sidebar-bg-dark);
+  border-radius: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: var(--color-content-bg-dark);
+}
+
+.table-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-sidebar-bg-dark) var(--color-secondary);
+}
+
+/* End Scrollbar style */
+
+/* Form style */
+
+.form-container {
+  background-color: var(--color-bg-dark-medium);
+  border: 1px solid var(--color-tertiary);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.form-container > h3,
+.form-container div label span {
+  color: var(--color-white);
+}
+
+.form-container div label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 12px 0 ;
+}
+
+.form-container div label input {
+  border-radius: 6px;
+  border: none;
+  padding: 4px 8px;
+  color: var(--color-fonts-content-light);
+}
+
+.form-container button {
+  width: 120px;
+  height: 30px;
+  margin: 12px 0 -12px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  color: var(--color-fonts-content-light);
+}
+
+/* End Form style */
+
+/* Remove spinners input number */
+
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* End Remove spinners input number */

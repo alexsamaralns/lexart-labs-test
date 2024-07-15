@@ -1,0 +1,30 @@
+.main-content-create-product {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-content-create-product > div:first-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content-create-product > div:first-child > a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: var(--color-success);
+  border: none;
+  border-radius: 8px;
+  color: var(--color-white);
+  padding: 8px 12px;
+}
+
+.form-container-product {
+  background-color: transparent!important;
+  border: none!important;
+  padding: 40px;
+}

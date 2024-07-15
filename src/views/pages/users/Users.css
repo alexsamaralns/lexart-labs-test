@@ -1,0 +1,30 @@
+.main-content-users {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content-users > div:first-child {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.users-container {
+  width: 80%;
+  height: 436px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.grid-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es6",
+    "module": "es6",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./src/**/*.js",
+    "./src/**/*.jsx"
+, "src/views/pages/products/components/gridProducts.jss"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

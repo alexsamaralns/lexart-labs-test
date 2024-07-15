@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+.animate__animated.animate__fadeInTopRight, .animate__animated.animate__fadeOutTopRight {
+  --animate-duration: .5s;
+}
+
+.bg-login {
+  background: url(../../../assets/images/background/wallpaper-2.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-card {
+  background-color: #061d5bb3!important;
+  border: none!important;
+}
+
+.login-title, .login-info {
+  color: var(--color-tertiary);
+}
+
+.login-button {
+  background-image: linear-gradient(120deg, transparent 50%, orange 50%)!important;
+  color: var(--color-tertiary)!important;
+  border: none!important;
+  font-size: 18px;
+  height: 40px;
+}
+
+.icon-input-login {
+  background-color: transparent!important;
+  color: var(--color-tertiary)!important;
+  border: 1px solid var(--color-tertiary)!important;
+}
+
+.input-login {
+  background-color: var(--color-bg-light)!important;
+  border: 1px solid var(--color-tertiary)!important;
+  color: var(--color-tertiary)!important;
+}
+
+.btn-login {
+  border: 1px solid var(--color-tertiary)!important;
+  border-radius: 6px!important;
+  position: relative!important;
+  text-decoration: none!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  padding: 1rem 2rem!important;
+  background-size: 300%!important;
+  background-color: transparent!important;
+  transition: all 0.6s!important;
+}
+
+.btn-login:hover {
+  color: #061d5bb3!important;
+  background-position: 100%!important;
+  border: 1px solid transparent!important;
+}
+
+.btn-login:active {
+  transform: translate(0.5rem, 0.5rem)!important;
+}
+
+.register-button {
+  cursor: pointer;
+  margin: 12px 0 -12px 0;
+  color: var(--color-tertiary);
+  font-size: 14px;
+  width: 100%;
+  text-align: end;
+  text-decoration: underline;
+}
